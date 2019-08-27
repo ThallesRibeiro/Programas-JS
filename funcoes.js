@@ -116,3 +116,35 @@ function exe7(){
         alert("Não tem direito a aumento")
     }
 }
+function exe22(){
+    // recupera os dados do usuário
+    var idade = Number(document.getElementById("idade").value);
+    var peso = Number(document.getElementById("peso").value);
+    var risco = 0
+
+    if (idade < 20){
+         if (peso <= 60)
+         risco = 9
+         else if ((peso > 60) && (peso <90))
+         risco = 8
+            else if (peso > 90)
+            rico = 7 
+    }
+    if ((idade >= 20) && (idade <= 50)){
+        if (peso <= 60)
+        risco = 6
+        else if ((peso > 60) && (peso <90))
+        risco = 5
+        else if (peso > 90)
+        rico = 4
+    }
+    if (idade > 50){
+        if (peso <= 60)
+        risco = 3
+        else if ((peso > 60) && (peso <90))
+        risco = 2
+        else if (peso > 90)
+        rico = 1
+    }
+    alert("O risco se encaixa no grupo " + risco)
+}
